@@ -1,0 +1,250 @@
+.grid {
+	height: 480px;
+	/* background-color: pink; */
+}
+.ad {
+	width: 250px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: -250px;
+}
+.ad:hover .ad-r {
+	width: 990px;
+}
+.ad .ad-r {
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z-index: 999;
+	width: 0px;
+	height: 480px;
+	transition: all 0.8s;
+	background: url(../images/ad-r.jpg);
+}
+.grid-col1 {
+	width: 190px;
+	height: 100%;
+	background-color: #6e6568;
+	color: #FFFFFF;
+	font-size: 14px;
+	position: relative;
+}
+.grid-col1 ul {
+	padding: 20px 0;
+}
+.grid-col1 ul li {
+	padding-left: 12px;
+	height: 29px;
+	line-height: 29px;
+}
+.grid-col1 ul li:hover {
+	background-color: #C0C0C0;
+}
+.grid-col1 a {
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 0 3px;
+}
+.grid-col1 a:hover {
+	color: #F10215;
+}
+.grid-col2 {
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+	/* background-color: royalblue; */
+}
+.grid-col2-b div {
+	float: left;
+	margin-top: 10px;
+}
+.grid-col2-b div:last-child {
+	float: right;
+	margin-top: 10px;
+}
+/* 箭头部分 */
+.grid-col2-t {
+	position: relative;
+}
+.arrow-l,
+.arrow-r {
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 60px;
+	background: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.5);
+	font-family: arial;
+}
+.arrow-r {
+	right: 0;
+}
+.arrow-l {
+	left: 0;
+}
+.circle {
+	width: 165px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(255, 255, 255, .3);
+	bottom: 20px;
+	border-radius: 10px;
+	padding-left: 6px;
+}
+.circle li {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px 4px 0;
+	cursor: pointer;  /* 鼠标经过li的时候变成小手 */
+}
+.circle .current {
+	background-color: #F10215;
+}
+.grid-col3 {
+	width: 190px;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+.login {
+	height: 85px;
+	padding: 15px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.login-t {
+	width: 95px;
+	height: 60px;
+	line-height: 20px;
+	font-size: 12px;
+	white-space: nowrap; /* 强制一行内显示 */
+	overflow: hidden; /* 溢出隐藏 */
+	text-overflow: ellipsis; /* 超出部分省略号代替 */
+	color: #666666;
+	padding-left: 60px; /* 把文字挤过来 */
+	position: relative;
+}
+.login-t a {
+	color: #666666;
+}
+.login-t a:hover {
+	color: #F10215;
+}
+.user-info {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../images/sprite_userinfo@1x.png) no-repeat;
+}
+.user-info img {
+	width: 36px;
+	margin: 5px;
+	top: 3px;
+	left: 2px;
+	position: absolute;
+	border-radius: 50%;
+}
+.login-b a {
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	margin-left: 3px;
+	border: 2px solid #F10215;
+	text-align: center;
+	color: #F10215;
+	font-size: 14px;
+}
+.login-b a:hover {
+	background-color: #F10215;
+	color: #FFFFFF;
+}
+.news {
+	height: 155px;
+	padding: 7px 13px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid #CCCCCC;
+}
+.news-t {
+	height: 19px;
+	position: relative;
+	border-bottom: 1px solid #CCCCCC;
+}
+.news-t a {
+	float: left;
+	height: 17px;
+	line-height: 17px;
+}
+.news-t .first {
+	width: 38px;
+	border-right: 1px solid #CCCCCC;
+}
+.news-t .last {
+	margin-left: 15px;
+}
+.news-t .more {
+	float: right
+}
+.news-t div {
+	height: 2px;
+	width: 28px;
+	background-color: #F10215;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.news-b {
+	padding: 15px 0 0;
+	font-size: 13px;
+}
+.news-b li {
+	height: 23px;
+	line-height: 23px;
+	
+}
+.expand {
+	height: 209px;
+	background-color: #fff;
+	overflow: hidden; /* expand 这个宽度继承了 父亲 190宽度 */
+}
+.expand ul {
+	width: 195px; /*  父亲是 190 但是里面的li 宽度超过了190 摆放不开 4个li 此时 让ul 宽度变大 */ 
+}
+.expand  li {
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+.expand  li a {
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+}
+.expand  li i {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background: url(../images/sprite_fs@1x.png) no-repeat;
+	width: 18px;
+	height: 23px;
+	background-position: -5px -88px;
+}
+.expand  li:first-child i {
+	width: 18px;
+	height: 22px;
+	background-position: -5px -88px;
+}
+.expand span {
+	font-size: 14px;
+};
